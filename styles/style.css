@@ -5,6 +5,7 @@ body, html {
 
 .container {
     height: 100%;
+    min-width: 960px;
 }
 
 .navbar, .footer {
@@ -40,33 +41,40 @@ body, html {
     justify-content: flex-end;
 }
 
-li {
-    margin-left: 10px;
+.footer li {
+    padding-left: 27px;
+}
+
+.navbar li {
+    padding-left: 15px;
 }
 
 .logo-container {
-    border: 1px solid black;
     padding-top: 140px;
     text-align: center;
 }
 
 .searchbar-container {
-    border: 1px solid black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .searchbar-exterior {
-    border: 1px solid black;
     width: 450px;
-    line-height: 45px;
+    height: 45px;
     border-radius: 50px;
     margin: 0 auto;
     text-align: center;
+    background-color: #9ab3f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .searchbar {
     width: 77%;
+    background-color: #9ab3f5;
+    border-style: none;
 }
 
 .buttons-container {
@@ -75,5 +83,44 @@ li {
 }
 
 .buttons-container > button {
-    height: 38px;
+    line-height: 34px;
+    padding: 0 13px;
+    margin-left: 3px;
+    background-color: #9ab3f5;
+    border: 1px solid #9ab3f5;
+    border-radius: 4px;
+}
+
+.search-btn:hover {
+    border: 1px solid #7579e7;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav a {
+    font-size: 13px;
+}
+
+.apps-icon {
+    padding-top: 3px;
+}
+
+.signin-btn {
+    font-weight: bold;
+    color: white;
+    background-color: #a3d8f4;
+    line-height: 28px;
+    border: 1px solid #a3d8f4;
 }
